@@ -5,9 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <title>Wilton Git</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Teste de Overlay</h1>
     <h2>A cor dos textos é violeta</h2>
+    <div class="overlay">
+        <span class="fechar">&#215</span>
+        <div class="caixa">
+            <h2>Formulario no Overlay</h2>
+            <form>
+                <input type="text" placeholder="Seu nome">
+            </form>
+        </div>
+    </div>
+    <button class="abrir" onclick="abrirOverlay()">Abrir Overlay</button>
+    <script> 
+    function abrirOverlay(){
+        document.getElementsByClassName("overlay")[0].style.display="block"
+    }
+    function fecharOverlay(){
+        document.getElementsByClassName("overlay")[0].style.display="none"
+    }
+    </script>
+    
 </body>
 </html>
